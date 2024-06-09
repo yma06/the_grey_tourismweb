@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To The Paris</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins-Regular;
+            scroll-behavior: smooth;
+        }
+        /* Logo section */
+        
+        .logoContainer {
+            width: 100%;
+            height: 350px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logoContainer img {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 80%;
+            opacity: 0.9;
+        }
+        
+        .logoText {
+            text-transform: capitalize;
+            padding-left: 100px;
+        }
+        
+        .logoText h3 {
+            font-size: 400%;
+        }
+        
+        .logoText span {
+            font-size: 175%;
+        }
+        
+        .rating {
+            color: goldenrod;
+        }
+        
+        .signin {
+            color: rgb(31, 214, 70);
+            text-decoration: none;
+            position: absolute;
+            right: 30px;
+            bottom: 10%;
+            font-size: 30px;
+        }
+        /* logo section end */
+        /* trip detail section */
+        
+        .tripDetail img {
+            width: 100%;
+        }
+        
+        .book img {
+            width: 100%;
+        }
+        /* trip detail section end */
+        /* footer */
+        
+        footer {
+            background-color: rgb(41, 255, 41);
+        }
+        /* footer End */
+    </style>
+</head>
+
+<body class="bg-dark-subtle">
+    <!-- logo section -->
+    <section class="logo">
+        <div class="logoContainer">
+            <img src="image/paris2.jpg" alt="">
+            <div class="logoText">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="card-title fw-bolder">Paris</h3>
+                <span class="fw-bolder " style="color: rgb(31, 214, 70);">180$</span>
+                <span class="fw-bold">/1 person</span>
+                <a href="#bookingSystem" class="btn btn-success mt-3" style="display: block;">Booking Now</a>
+                <a href="singinForm.html" class="signin">Sign Up Here</a>
+            </div>
+    </section>
+    <!-- logo section end -->
+
+    <!-- nav section -->
+    <section class="nav sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h2>The Grey</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                All of Info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html/#mostPopular">Most Popular visting Trip</a></li>
+                                <li><a class="dropdown-item" href="index.html/#honeymoon">Honey Moon Trip</a></li>
+                                <li><a class="dropdown-item" href="index.html/#histroist">Histroist Trip</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#comment">Go Stairaight to Comment Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <!-- nav section end-->
+
+    <!-- Overview secion -->
+    <section>
+        <div class="container shadow">
+            <h2 class="fs-2 fw-bolder m-4">Overview </h2>
+            <p class="fw-bold fs-6"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, laudantium! Consectetur officia, laboriosam exercitationem officiis voluptates quas molestias numquam quo, in mollitia, nihil doloribus debitis voluptatem. Mollitia illo
+                est nobis?
+            </p>
+            <div class="row bg-light rounded-2">
+                <div class="col-12 col-lg-4 text-center mt-lg-4 mb-lg-4 mt-1 mb-1 fs-5">5 days</div>
+                <div class="col-12 col-lg-4 text-center mt-lg-4 mb-lg-4 mt-1 mb-1 fs-5"> Age 15+</div>
+                <div class="col-12 col-lg-4 text-center mt-lg-4 mb-lg-4 mt-1 mb-1 fs-5">Paris, France </div>
+            </div>
+        </div>
+    </section>
+    <!-- Overview section end -->
+
+    <!-- Trip Detil -->
+    <section class="container">
+        <h2 class="fs-2 fw-bolder m-4"> Trip Detail </h2>
+        <div class="row container tripDetail">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <img src="image/eiffel-tower-975004_640.jpg" alt="" srcset="">
+            </div>
+            <form action="" class="col-xl-6 col-lg-6 col-md-12 mt-5">
+                <div class="">
+                    <div class="">
+                        <label for="">How Many Members in Your Group?</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="">
+                        <label for="" class="">Choose Your Duration</label>
+                        <select name="days" id="" class="form-control">
+                        <option value="">5 days</option>
+                        <option value="">10 days</option>
+                        <option value="">1 month</option>
+                        <option value="">2 months</option>
+                        <option value="">3 months</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <label for="" class="">Do You need To book Hotel?</label>
+                        <select name="" id="" class="form-control">
+                        <option value="">yes</option>
+                        <option value="">no</option>
+                    </select>
+                    </div>
+                    <div class="">
+                        <label for="" class="">Which way do You Prefer for Travelling</label>
+                        <select name="" id="" class="form-control">
+                        <option value="">Flight</option>
+                        <option value="">Car(Bus)</option>
+                        <option value="">Train</option>
+                    </select>
+                    </div>
+                </div>
+                <button class="btn btn-outline-success m-3">Submit</button>
+            </form>
+        </div>
+
+    </section>
+    <!-- Trip Detail End -->
+
+    <!-- Booking System -->
+    <section id="bookingSystem" class="p-4">
+        <div class="shadow-sm container">
+            <h2 class="mt-3 p-3">
+                Are You Booking This Tour?
+            </h2>
+            <div class="row container">
+                <form action="" class="col-xl-6 col-lg-6 col-md-12">
+                    <input type="text" placeholder="Your Name " class="form-control mt-3">
+                    <input type="text" placeholder="Your Account ID" class="form-control mt-3">
+                    <input type="text" placeholder="Your Email " class="form-control mt-3">
+                    <input type="text" placeholder="Your Phone Number " class="form-control mt-3">
+                    <textarea name="" cols="8" id="" class="form-control mt-3" placeholder="Messages"></textarea>
+                    <button class="btn btn-success form-control mt-3"> Remind Us About This Tour</button>
+                </form>
+                <div class="book col-xl-6 col-lg-6 col-md-12 mt-4">
+                    <img src="image/paris.jpg" alt="" srcset="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Booing system end -->
+
+    <!-- Footer Section -->
+    <footer id="footer ">
+        <div class="container row">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-4 ">
+                <dl class="mt-2 m-5 p-3 ">
+                    <dt>
+                    <h4>About Us</h4>
+                </dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+                </dl>
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 ">
+                <dl class=" mt-2 m-5 p-3 ">
+                    <dt>
+                    <h4>Services</h4>
+                </dt>
+                    <dd><a href="# ">Home</a></dd>
+                    <dd><a href="#about">About</a></dd>
+                    <dd><a href="#mostPopular">Trips</a></dd>
+                    <dd><a href="#comment ">Comment</a></dd>
+                </dl>
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 ">
+                <dl class="mt-2 m-5 p-3 ">
+                    <dt>
+                    <h4>Contact Infos</h4>
+                </dt>
+                    <dd><a href=""><i class="fa-solid fa-envelope"></i> thegrey@.com</a></dd>
+                    <dd>09-123456789/ 09-987654321</dd>
+                    <dd class="social-medias ">
+                        <a href="# "><i class="fab fa-facebook "></i></a>
+                        <a href="# "><i class="fab fa-youtube "></i></a>
+                        <a href="# "><i class="fab fa-twitter "></i></a>
+                        <a href="# "><i class="fab fa-linkedin "></i></a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <div class="container row text-center text-decoration-none" style="color: rgb(28, 24, 255);">
+        <p class="col-6 col-sm-6 col-md-3">@ 2024</p>
+        <a href="" class="col-6 col-sm-6 col-md-3 text-decoration-none">Terms</a>
+        <a href="" class="col-6 col-sm-6 col-md-3 text-decoration-none">Cookies</a>
+        <p class="col-6 col-sm-6 col-md-3 ">Desgin And Created By <a href="" class="text-decoration-none">The Omniscient</a></p>
+    </div>
+</body>
+<script src="js/bootstrap.bundle.js "></script>
+
+</html>
