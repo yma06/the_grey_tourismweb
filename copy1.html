@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internation Tourist Company</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-5.15.3/css/all.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins-Regular;
+            scroll-behavior: smooth;
+        }
+        /* Logo Section */
+        
+        .logoContainer {
+            width: 100%;
+            height: 350px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logoContainer img {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 40%;
+            opacity: 0.8;
+        }
+        
+        .logo-text {
+            padding-left: 100px;
+        }
+        
+        .logo-text .first-span {
+            font-weight: bolder;
+            text-transform: capitalize;
+            font-size: 500%;
+        }
+        
+        .logo-text .sec-span {
+            font-weight: bolder;
+            text-transform: capitalize;
+            font-size: 500%;
+        }
+        
+        .logoContainer .first {
+            font-size: 50px;
+            text-transform: capitalize;
+        }
+        
+        .logoContainer .secound {
+            font-size: 25px;
+            text-transform: capitalize;
+        }
+        
+        .signin {
+            text-decoration: none;
+            position: absolute;
+            right: 30px;
+            bottom: 10%;
+            font-size: 30px;
+        }
+        /* Logo Section End */
+        /* About us Section */
+        
+        .aboutContainer {
+            box-shadow: 10px black;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            height: 600px;
+        }
+        /* About us Section end */
+        /* All of the Trips */
+        
+        .card img {
+            height: 300px;
+        }
+        /* All of the Trips End*/
+        /* Comment Section */
+        
+        .commentCointer {
+            border-radius: 8px;
+            box-shadow: 2px;
+            padding: 20px;
+            width: 100%;
+            background-color: rgb(143, 255, 171);
+        }
+        /* Comment Section End */
+        /* footer */
+        
+        footer {
+            background-color: rgb(41, 255, 41);
+        }
+        /* footer End */
+    </style>
+</head>
+
+<body class="bg-dark-subtle">
+
+    <!-- logo section start-->
+    <section class="logo">
+        <div class="logoContainer">
+            <img src="image/021.jpg" alt="">
+            <div class="logo-text">
+                <span class="first-span text-black">the </span><span class="sec-span text-black">grey</span>
+                <p class="text-black first"> Global tour company</p>
+                <p class=" secound text-black">Make Your New World</p>
+            </div>
+            <a href="singinForm.html" class="signin text-black">Sign Up Here</a>
+        </div>
+    </section>
+    <!-- logosection end -->
+
+    <!-- nav section -->
+    <section class="nav sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h2>The Grey</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      All of Info
+                    </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#mostPopular">Most Popular visting Trip</a></li>
+                                <li><a class="dropdown-item" href="#honeymoon">Honey Moon Trip</a></li>
+                                <li><a class="dropdown-item" href="#histroist">Histroist Trip</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#comment">Go Stairaight to Comment Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <!-- nav section end-->
+
+    <!--About Tourism Company start-->
+    <section>
+        <div class="container aboutContaier mt-5 ">
+            <h1>
+                Why Should You Choose Us?!!
+            </h1>
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-6 p-2">
+                    <div class="object-fit-cover">
+                        <img src="image/venice.jpg" class="card-img-top object-fit-cover" style="height: 150px; border-radius: 10px 10px 0px 0px;" alt="...">
+                        <h4 class="card-body text-center align-content-center" style="height: 100px; background: white; border-radius:0px 0px 10px 10px;">
+                            We have 1000+ tour Guides at everywhere!
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-6 p-2">
+                    <div class="object-fit-cover">
+                        <img src="image/ARiverCover.jpg" class="card-img-top object-fit-cover" style="height: 150px; border-radius: 10px 10px 0px 0px;" alt="...">
+                        <h4 class="card-body text-center align-content-center" style="height: 100px; background: white; border-radius:0px 0px 10px 10px ;">
+                            22+ Years of Tourism Experience!
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-6 p-2">
+                    <div class="object-fit-cover">
+                        <img src="image/london3.jpg" class="card-img-top object-fit-cover" style="height: 150px; border-radius: 10px 10px 0px 0px;" alt="...">
+                        <h4 class="card-body text-center align-content-center" style="height: 100px; background: white; border-radius:0px 0px 10px 10px ;">
+                            90% or Visitor are Happy with US!
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 col-sm-6 p-2">
+                    <div class="object-fit-cover">
+                        <img src="image/mount-everest.jpg" class="card-img-top object-fit-cover" style="height: 150px; border-radius: 10px 10px 0px 0px;" alt="...">
+                        <h4 class="card-body text-center align-content-center" style="height: 100px; background: white; border-radius:0px 0px 10px 10px ;">
+                            We can teke you to most prettiest places!
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Tourism Company end-->
+
+    <!-- Most Popular Trip section start -->
+    <section class="container" id="mostPopular">
+        <h2 class="mt-5 m-3 text-center">This ia Most Popular City To Visit!</h2>
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2">
+                <div class="card object-fit-cover">
+                    <img src="image/paris.jpg" class="card-img-top object-fit-cover" style="height: 30;" alt="...">
+                    <div class="card-body">
+                        <div class="rating text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h3 class="card-title">Paris</h3>
+                        <span class="fw-bolder fs-4" style="color: rgb(236, 75, 0);">180$</span>
+                        <span class="fw-bold">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">5 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Paris, France</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="toParis.html" class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/venice-6489813_640.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                        </div>
+                        <h3 class="card-title ">Venice</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">200$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">3 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Venice, Italy</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/london1.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">London</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">180$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">6 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Birmingham, UK</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/0190.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Cadana</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">180$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">5 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Cadana</td>
+                            </tr>
+                        </table>
+
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Most Popular Trip secion end -->
+
+    <!-- HoneyMoon Trip section start -->
+    <section class="container " id="honeymoon">
+        <h2 class="mt-5 m-3 text-center">Best For Honey Moon Trips!</h2>
+        <div class="row ">
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/0527ED06372C-1.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Paris</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">170$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">5 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Birmingham</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/hawaii3.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Hawaii</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">200$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">7 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Hawaii, USA</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/amazon1.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Amazon Rainforest</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">190$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">14 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Brazil</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/signcover.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Paris</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">180$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">5 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Birmingham</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HoneyMoon Trip secion end -->
+
+    <!-- Hisroist Trip section start -->
+    <section class="container " id="histroist">
+        <h2 class="mt-5 m-3 text-center">Histroical trips!</h2>
+        <div class="row ">
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/egypt.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Eygpt</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">180$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">5 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Egypt</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Detail</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/bagan-443194_640.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Bagan</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">140$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">15 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Bagan, Myanmar</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Detail</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/romaRiver.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Roma</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">220$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">5 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Roma, Italy</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="toRoma.html" class="btn btn-primary ">View Detail</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-6 p-2 ">
+                <div class="card object-fit-cover ">
+                    <img src="image/cover.jpg " class="card-img-top object-fit-cover " style="height: 30; " alt="... ">
+                    <div class="card-body ">
+                        <div class="rating text-center ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star-half-alt "></i>
+                        </div>
+                        <h3 class="card-title ">Paris</h3>
+                        <span class="fw-bolder fs-4 " style="color: rgb(236, 75, 0); ">180$</span>
+                        <span class="fw-bold ">/1 person</span>
+                        <table class="table m-2">
+                            <tr>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">5 days</td>
+                                <td class="text-center rounded-1" style="background-color: rgb(216, 216, 216);">Birmingham</td>
+                            </tr>
+                        </table>
+                        <p style="color: rgb(100, 100, 100); ">Lorem ipsum dolor sit amet voluptatum at autem rerum, hic id quaerat maiores nesciunt facere sapiente nam quasi fugiat!</p>
+                        <a href="# " class="btn btn-primary ">View Details</a>
+                        <a class="btn btn-danger align-items-end ">Love</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- histroist Trip secion end -->
+
+    <!-- Comment Section Start-->
+    <section id="comment " id="comment ">
+        <div class="commentCointer ">
+            <h2 class="text-center ">Any idea of yours are welcome to suggest here.</h2>
+            <form action=" ">
+                <div>
+                    <label for=" " class="form-label align-text-top m-1 ">Enter Your User Name</label>
+                    <input class="form-control " type="text " placeholder="Enter Your Account Name ">
+                </div>
+                <div>
+                    <label for=" " class="form-label m-1 ">Suggesing Comments Go Here</label>
+                    <textarea class="form-control " type="text " placeholder="Type Any Ideas of Yours " rows="7 "></textarea>
+                </div>
+                <button type="button " class="btn btn-outline-success mt-3 ">Submit </button>
+            </form>
+        </div>
+
+    </section>
+    <!-- Comment Section End-->
+
+    <!-- Footer Section -->
+    <footer id="footer ">
+        <div class="container row">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-4 ">
+                <dl class="mt-2 m-5 p-3 ">
+                    <dt>
+                        <h4>About Us</h4>
+                    </dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+                    <dd>
+                        <img src="assets/images/master_card.jpg ">
+                        <img src="assets/images/visa.png ">
+                        <img src="assets/images/kbzpay.png ">
+                        <img src="assets/images/cb_pay.jpg ">
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 ">
+                <dl class=" mt-2 m-5 p-3 ">
+                    <dt>
+                        <h4>Services</h4>
+                    </dt>
+                    <dd><a href="# ">Home</a></dd>
+                    <dd><a href="#collection ">Trips</a></dd>
+                    <dd><a href="#products ">Product</a></dd>
+                    <dd><a href="#blog ">Blog</a></dd>
+                </dl>
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 col-lg-4 ">
+                <dl class="mt-2 m-5 p-3 ">
+                    <dt>
+                        <h4>Contact Infos</h4>
+                    </dt>
+                    <dd>thegrey@.com</dd>
+                    <dd>09-123456789/ 09-987654321</dd>
+                    <dd class="social-medias ">
+                        <a href="# "><i class="fab fa-facebook "></i></a>
+                        <a href="# "><i class="fab fa-youtube "></i></a>
+                        <a href="# "><i class="fab fa-twitter "></i></a>
+                        <a href="# "><i class="fab fa-linkedin "></i></a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+</body>
+<script src="js/bootstrap.bundle.js "></script>
+
+</html>
